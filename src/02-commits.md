@@ -23,16 +23,18 @@ TREE="93ca827d4cef039fb7300fceece4008fef2bcd3d"
 PARENT="b4bc498a222ec212bc7bba03a9feac2408b38605"
 AUTHOR="John Doe <jdoe@mail.me>"
 AUTHOR_DATE="1713516486 +0200"
-COMMITTER="John Doe <jdoe@mail.me>
+COMMITTER="John Doe <jdoe@mail.me>"
 COMMITTER_DATE="1713519251 +0200"
 MESSAGE="Message"
 
 # Let's format them a bit
-COMMIT_INFO="tree $TREE
+COMMIT_INFO=<< HEREDOC
+tree $TREE
 parent $PARENT
 author $AUTHOR $AUTHOR_DATE
 committer $COMMITTER $COMMITTER_DATE
-$MESSAGE"
+$MESSAGE
+HEREDOC
 
 # As security, let's calculate how many characters the previo
 COMMIT_INFO_LENGTH=$(echo "$COMMIT_INFO" | wc -c)
