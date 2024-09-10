@@ -1,7 +1,7 @@
 all: pdf html epub
 pdf:
 	mkdir -p out
-	./build.sh out/git-book.pdf
+	EXTRA="--include-in-header setup/chapter_break.tex --include-in-header setup/inline_code.tex" ./build.sh out/git-book.pdf
 
 html:
 	mkdir -p out/web
@@ -10,4 +10,4 @@ html:
 
 epub:
 	mkdir -p out
-	./build.sh out/git-book.epub
+	EXTRA="--include-in-header setup/chapter_break.tex --include-in-header setup/inline_code.tex" ./build.sh out/git-book.epub
