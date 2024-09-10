@@ -14,4 +14,4 @@ pandoc  \
 	--metadata=author:"Ghislain Rodrigues" \
 	--metadata=lang:"en-GB" \
 	-o "$1" \
-	./00_index.md ./01_repository.md ./02_commits.md ./03_branches.md ./04_reflog.md
+	./src/*.md
