@@ -1,6 +1,6 @@
 ## Commits
 
-This talk will not be about how to use the git commit command, but rather about understanding what are commits.
+This chapter will not be about how to use the git commit command, but rather about understanding what are commits.
 In term of datastructure, commits are represented as a Linked List, where each commit has a reference to its parent(s).
 A commit is represented by:
 
