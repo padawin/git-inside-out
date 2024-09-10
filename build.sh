@@ -14,4 +14,4 @@ pandoc  \
 	--metadata=author:"Ghislain Rodrigues" \
 	--metadata=lang:"en-GB" \
 	-o "$1" \
-	./src/*.md
+	$(ls -v ./src/*.md)
